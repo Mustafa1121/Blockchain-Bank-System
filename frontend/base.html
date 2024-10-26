@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="script.js" defer></script>
+    <title>Bank Account Test</title>
+  </head>
+  <body>
+    <div>
+      <h3>Create Account</h3>
+      <input type="text" id="owners" />
+      <button onclick="createAccount()">Create</button>
+    </div>
+
+    <div>
+      <h3>View Accounts</h3>
+      <p id="accounts"></p>
+      <button onclick="viewAccounts()">View</button>
+    </div>
+
+    <div id="events"></div>
+  </body>
+</html>
